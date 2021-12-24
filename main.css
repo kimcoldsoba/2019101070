@@ -1,0 +1,316 @@
+body, html{
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color:#FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, .1);
+  position: fixed;
+  z-index: 1;
+}
+
+.logo img {
+  width: 190px;
+  position: absolute; 
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 43px;
+  float: left;
+}
+
+nav {
+  width: 1280px;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 60px 0 0;
+}
+
+nav ul li {
+ padding: 0;
+ margin: 0;
+ display: block;
+ float: right;
+}
+
+nav ul li a {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+  color: #2b2a2a;
+  text-decoration: none;
+  padding: 45px 25px;
+}
+
+.intro {
+  max-width: 100%;
+  height: 850px;
+  background-color: #C1E5CF;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.intro img {
+  width: 450px;
+  height: 510px;
+}
+
+.title1 {
+  text-align: center;
+  margin-top: 180px;
+  margin-left: 50px;
+}
+.title2 {
+  text-align: center;
+  margin-top: 180px;
+  margin-left: 50px;
+}
+.title3 {
+  text-align: center;
+  margin-top: 110px;
+  margin-left: 50px;
+}
+
+.title4 {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.intro h2 {
+  font-size: 30px;
+}
+.intro p {
+  font-size: 17px
+}
+.cta {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background: #C1E5CF;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer; 
+  margin-top: 20px;
+}
+.cta2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #2b2a2a;
+  background: white;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer; 
+  margin-top: 20px;
+}
+
+.intro_section02 {
+  max-width: 100%;
+  height: 750px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.intro_section02 img {
+  width: 400px;
+  height: 530px;
+  float:right;
+  margin-left: 220px;
+}
+
+.intro_section02 h2 {
+  font-size: 25px;
+}
+.intro_section02 p {
+  font-size: 17px
+}
+
+.intro_section03 {
+  max-width: 100%;
+  height: 750px;
+  background-color: #D5E9FA;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.intro_section03 img {
+  width: 330px;
+  height: 330px;
+  margin-top: 80px;
+  padding-top: auto;
+  margin-right: 180px;
+}
+
+.intro_section03 h2 {
+  font-size: 25px;
+}
+.intro_section03 p {
+  font-size: 17px
+}
+
+.intro_section04 {
+  max-width: 100%;
+  height: 750px;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.intro_section04 img {
+  width: 450px;
+  height: 280px;
+  padding-top: auto;
+  margin-top: 50px;
+  margin-left: 220px;
+}
+
+.intro_section04 h2 {
+  font-size: 25px;
+}
+.intro_section04 p {
+  font-size: 17px
+}
+
+
+footer{
+  display: block;
+  max-width: 100%; 
+  height: 100px;
+  background-color: #C1E5CF;
+  text-align: center;
+  color: #464646;
+  font-size: 15px;
+  padding: 30px;
+}
+
+/* begin popup */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup .blanket {
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 30px 40px;
+  width: 621px;
+  height: 454px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -250px;
+  margin-left: -380px;
+}
+
+.popup h2 {
+  margin: 30px 0 20px;
+}
+
+.popup #signup {
+  margin-top: 40px;
+}
+
+.signup {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background: #C1E5CF;
+  border: 1px solid #C1E5CF;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  background: url(./images/close_button.png) no-repeat center center;
+  background-size: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup .logo02 {
+  display: logo02;
+  justify-content: center;
+  margin-top: 20px;	
+}
+
+.popup .row {
+  display: row;
+  justify-content: center;
+  margin-top: 60px;	
+}
+
+.popup .item {
+  width: 475px;
+  font-size: 59px;
+  position: relative;
+  left: 36px;
+  margin-top: 10px;
+}
+
+.popup .item input[type='text'] {
+  display: block;
+  font-size: 17px;
+  font-weight: medium;
+  border: 1px solid #707070;
+  height: 65px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 100%;
+  padding: 20px 20px;
+}
